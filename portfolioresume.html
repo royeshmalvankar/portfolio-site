@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Github Profile</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+    /* body{
+       
+    } */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+.logo {
+    font-size: 2em;
+    color: #555;
+    cursor: default;
+}
+.logo>span {
+    color: #7d2ae8;
+}
+.navi {
+    margin-left: -300px;
+}
+.navi>a {
+    font-size: 1.4em;
+    color: #555;
+    text-decoration: none;
+    margin-right: 40px;
+    font-weight: 500;
+    transition: .3s;
+    scroll-behavior:smooth;
+}
+.navi>a:hover {
+    color: #7d2ae8;
+}
+.btn-r {
+    color: #fff;
+    text-decoration: none;
+    padding: 8px 35px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: .3s;
+}
+.btn-r:hover {
+    color: #7d2ae8;
+    background: transparent;
+}
+#Home {
+    background-image: url('https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2647&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.home {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    padding: 30px 100px;
+}
+.image1{
+    padding: 30px;
+}
+.content-skills>h2{
+    text-align: center;
+    font-size: 3em;
+}
+.content-skills>h2>span {
+    color: #7d2ae8;
+}
+#About{
+    background-color: black;
+}
+.content {
+    max-width: 1200px;
+    color: #555;
+}
+.content>h2 {
+    font-size: 3em;
+}
+.content>h2>span {
+    color: #7d2ae8;
+}
+.content>h4 {
+    font-size: 2em;
+}
+.content>p {
+    padding: 10px 0 40px 0;
+    color: #a3a3ac;
+}
+.btn>a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: .3s;
+}
+.btn>a:hover:nth-child(1) {
+    color: #7d2ae8;
+    background: transparent;
+}
+.btn>a:nth-child(2) {
+    color: #7d2ae8;
+    background: transparent;
+    margin-left: 30px;
+    padding: 10px 30px;
+}
+.btn>a:hover:nth-child(2) {
+    color: #fff;
+    background: #7d2ae8;
+}
+.social-icons {
+    position: absolute;
+    bottom: 50px;
+}
+.social-icons>a {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #7d2ae8;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid #7d2ae8;
+    transition: .3s;
+}
+.social-icons>a:hover {
+    transform: translateY(-5px);
+}
+.social-icons>a>i {
+    color: #fff;
+}
+#Skills{
+    background-color: rgb(20,24,25);
+    padding-top: 50px;
+}
+/* .content-skills{
+    padding-top: 20px;
+} */
+.tech-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    text-align: center;
+    padding: 50px;
+    gap: 100px;
+    font-size: 1.5em;
+    color: #7d2ae8;
+}
+.tech-container>div>img{
+    width: 200px;
+    height:200px
+}
+.Tools-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    text-align: center;
+    padding: 50px;
+    gap: 100px;
+    font-size: 1.5em;
+    color: #7d2ae8;
+}
+.Tools-container>div>img{
+    width: 200px;
+    height:200px
+}
+.skill-heading{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+}
+.skill-heading>h2>span{
+    color: #7d2ae8;
+}
+.project{
+    background-color: black;
+    height: 100vh;
+    padding-top: 50px;
+}
+.project-content{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 50px;
+    gap: 100px;
+    font-size: 1.5em;
+    color: #7d2ae8;
+    text-align: center;
+}
+.project-content>div{
+    box-shadow: rgba(82, 80, 81, 0.995) 0px 0px 0px 2px, rgba(122, 112, 122, 0.799) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+    border-radius: 5px;
+    display: inline;
+    align-content: flex-end;
+}
+.project-content>div>p{
+   color: #555;
+   font-size: 0.7em;
+   font-weight: bold;
+   padding: 30px;
+}
+.project-content>div>img{
+   width: 550px;
+   height: 300px;
+   padding-top: 20px;
+   border-radius: 5px;
+}
+.content-project>h2{
+text-align: center;
+font-size: 3em;
+color: #555
+}
+.content-project>h2>span {
+color: #7d2ae8;
+}
+.btn-project{
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    padding:25px;
+}
+.btn-project>a>button{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 40px;
+    background: #7d2ae8;
+    border-radius: 10px;
+    border: 2px solid #7d2ae8;
+    font-weight: 500;
+    transition: .3s;
+}
+.btn-project>a>button:hover{
+    color: #7d2ae8;
+    background: transparent;
+}
+.contact{
+    background-color: rgb(20,24,25);
+}
+.content-contact{
+    padding: 50px;
+    height: 100vh;
+
+}
+.content-contact>h2{
+    text-align: center;
+    font-size: 3em;
+    padding-top: 50px;
+}
+.content-contact>h2>span {
+    color: #7d2ae8;
+}
+.content-contact>i {
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    background: #7d2ae8;
+    border-radius: 50%;
+    margin-right: 22px;
+    text-align: center;
+    line-height: 35px;
+    border: 1px solid #fff;
+    outline: 2px solid #7d2ae8;
+    transition: .3s;
+    padding: 0px 0px 0px 8px;
+}
+.content-contact>h3{
+    font-size: 2.5em;
+    margin-top: 150px;
+}
+.content-contact>a {
+   text-decoration: none;
+   color: #7d2ae8;
+   font-size: 1.7em;
+}
+</style>
+<body>
+    <header>
+        <h2 class="logo"><span>R</span>oyes<span>h</span></h2>
+        <nav class="navi">
+            <a href="#Home">Home</a>
+            <a href="#About">About</a>
+            <a href="#Skills">Skills</a>
+            <a href="#Project">Project</a>
+            <a href="#Contact">Contact</a>
+        </nav>
+        <a href="https://drive.google.com/uc?export=view&id=1EwAOPSBieCFUDnZXTKvdo0bbD3It2gVi"  class="btn-r">Resume</a>
+    </header>
+    <section class="home" id="Home">
+        <div class="content">
+            <h2>Hi, I'm <span>Royesh Malvankar</span></h2>
+            <h4>I am a <span class="ani"></span></h4>
+            <p>Energetic and detail-oriented Front-End Development Intern with a solid foundation in Python and proficiency in HTML, CSS, and JavaScript. Quick learner adept at mastering new technologies and frameworks.</p>
+            <div class="btn">
+                <a href="https://drive.google.com/uc?export=view&id=1EwAOPSBieCFUDnZXTKvdo0bbD3It2gVi">Hire Me</a>
+                <a href="#Project">See Projects</a>
+            </div>
+            <div class="social-icons">
+                <a href="mailto:royeshmalvankar@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/in/royesh-malvankar-59a023276/"><i class="fa-brands fa-linkedin-in"></i></a>
+                <a href="https://github.com/royeshmalvankar"><i class="fa-brands fa-github"></i></a>
+            </div>
+        </div>
+    </section>
+    <section class="home" id="About">
+        <div class="image1">
+            <img src="https://masai-resume-builder-user-data.s3.ap-south-1.amazonaws.com/test/profile-image/6582affe20611c340461abd9/pGrgduznkvLgEkr4vfPDPRY4OYtajv.jpeg" alt="">
+        </div>
+        <div class="content">
+            <h2>About <span>Me</span></h2>
+            <h4 ></h4>
+            <p>Hello, I'm Royesh Rajesh Malvankar, a passionate individual hailing from Vasai West, Palghar district, Maharashtra. Currently enrolled in the Prepleaf By Masai Career Accelerator Program, my journey revolves around transforming my aspirations into reality.
+
+                Driven by a vision to become a great developer, I am dedicated to crafting a fulfilling life and career through my love for coding. My passion lies in developing innovative apps and websites, where I channel my creativity and technical skills.
+                
+                Proficient in HTML, CSS, JavaScript, Python, GitHub, and DOM, I am equipped with a robust foundation for tackling the challenges of the digital realm. As I navigate through the world of programming, my mission is to continually learn and grow, building a path towards excellence in the ever-evolving field of technology.
+                
+                Join me on this exciting journey as I strive to make a mark in the world of development and create meaningful solutions that leave a lasting impact.</p>
+        </div>
+    </section>
+    <section class="skil" id="Skills">
+        <div class="content-skills">
+            <h2>My <span>Skills</span></h2>
+            <div class="skill-heading">
+                <h2><span>Tech</span>-Stack:</h2>
+            </div>
+            <div class="tech-container">
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/61/HTML5_logo_and_wordmark.svg/2048px-HTML5_logo_and_wordmark.svg.png" alt="">
+                    <h2>HTML5</h2>
+                </div>
+                <div>
+                    <img src="https://cdn.freelogovectors.net/wp-content/uploads/2020/04/css-3-logo.png" alt="">
+                    <h2>CSS3</h2>
+                </div>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/6a/JavaScript-logo.png/768px-JavaScript-logo.png" alt="">
+                    <h2>JavaScript</h2>
+                </div>
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Python-logo-notext.svg/1869px-Python-logo-notext.svg.png" alt="">
+                    <h2>Python</h2>
+                </div>
+            </div>
+            <div class="skill-heading">
+                <h2><span>To</span>ols:</h2>
+            </div>
+            <div class="Tools-container">
+                <div>
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Visual_Studio_Code_1.35_icon.svg/2048px-Visual_Studio_Code_1.35_icon.svg.png" alt="">
+                    <h2>Visual Studio</h2>
+                </div>
+                <div>
+                    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="">
+                    <h2>GitHub</h2>
+                </div>
+                <div>
+                    <img src="https://www.svgrepo.com/show/354202/postman-icon.svg" alt="">
+                    <h2>Postman</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="project" id="Project">
+            <div class="content-project">
+                <h2>My <span>Project</span></h2>
+            </div>
+            <div class="project-content">
+                <div>
+                    <img src="./Screenshot 2024-01-15 170244.png" alt="">
+                    <h2>Masai Calculator</h2>
+                    <p>Independently crafted a user-friendly Simple Calculator with features like Addition, Subtraction, Division, and Multiplication.
+                        Implemented Light and Dark modes to enhance user experience.Utilized HTML5, CSS3, and JavaScript for development, completing the solo project.
+                    </p>
+                        <p>Tech Stack:
+                            HTML |CSS3 |JavaScript
+                        </p>
+                    <div class="btn-project">
+                        <a href="https://github.com/royeshmalvankar/Masai-Calculator"><button>Git repo</button></a>
+                        <a href="https://teal-narwhal-da30b7.netlify.app/"><button>Deployed Link</button></a>
+                    </div>
+                    
+                </div>
+                <div>
+                    <img src="./Screenshot 2023-11-16 193714.png" alt="">
+                    <h2>Website Clone</h2>
+                    <p>Independently replicated the Urban Company website
+                        Implemented features like Login and Logout functionality, Image Slider, and homepage return button in login/signup pages
+                        Utilized HTML5, CSS3, and JavaScript to execute the project
+                        Completed the solo task in just one day
+                    &nbsp;</p>
+                    <p>Teck Stack:
+                        HTML5 |CSS3 |JavaScript</p>
+                    <div class="btn-project">
+                       <a href="https://github.com/royeshmalvankar/websitetrial"><button>Git repo</button></a>
+                       <a href="https://gregarious-sopapillas-935b64.netlify.app/"><button>Deployed Link</button></a> 
+                    </div>
+                </div>
+                <div>
+                    <img src="./Screenshot 2024-01-15 174648.png" alt="">
+                    <h2>Rock Paper Scissors</h2>
+                    <p>Developed a classic rock, paper, scissors game with a computer-generated opponent.
+                        Implemented a game loop and included an exit command for user convenience.
+                        Solely designed and built within a tight timeframe of one day.
+                    
+                    
+                    </p>
+                    <p>Teck Stack:
+                        Python
+                        <br>
+                        <br>
+                    </p>
+                    <div class="btn-project">
+                        <a href="https://github.com/royeshmalvankar/python-code"><button>Git repo</button></a>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section class="contact" id="Contact">
+        <div class="content-contact" >
+            <h2 >Contact<span> Me</span></h2>
+            <h3>Get In Touch:</h3>
+            <br><br><br>
+            <i class="fa-solid fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;</i><a href="tel:+91 9028583598"> +91 9028583598</a>
+            <br><br><br>
+            <i class="fa-solid fa-envelope">&nbsp;&nbsp;&nbsp;&nbsp;</i><a href="mailto:royeshmalvankar@gmail"> royeshmalvankar@gmail.com</a>
+            <br><br><br>
+            <i class="fa-brands fa-linkedin-in">&nbsp;&nbsp;&nbsp;&nbsp;</i><a href="www.linkedin.com/in/royesh-malvankar-59a023276"> Royesh Malvankar</a>
+            <br><br><br>
+            <i class="fa-brands fa-github">&nbsp;&nbsp;&nbsp;&nbsp; </i><a href="https://github.com/royeshmalvankar"> royeshmalvankar</a>
+        </div>
+    </section>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        let anim = new Typed(".ani",{
+            strings: ["Front-end Developer","JavaScript Developer","Python Developer"],
+            typeSpeed:150,
+            backSpeed:150,
+            loop:true
+        })
+    </script>
+</body>
+</html>
