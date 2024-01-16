@@ -71,10 +71,11 @@ header {
     background-image: url('https://images.unsplash.com/photo-1510519138101-570d1dca3d66?q=80&w=2647&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
     background-repeat: no-repeat;
     background-size: cover;
+    width: auto;
 }
 .home {
     position: relative;
-    width: 100%;
+    width: auto;
     height: 100vh;
     background: url('background.jpg');
     background-size: cover;
@@ -95,6 +96,8 @@ header {
 }
 #About{
     background-color: black;
+    height: auto;
+    width: auto;
 }
 .content {
     max-width: 1200px;
@@ -161,6 +164,8 @@ header {
     color: #fff;
 }
 #Skills{
+    height: auto;
+    width: auto;
     background-color: rgb(20,24,25);
     padding-top: 50px;
 }
@@ -204,7 +209,8 @@ header {
 }
 .project{
     background-color: black;
-    height: 100vh;
+    height: auto;
+    width: auto;
     padding-top: 50px;
 }
 .project-content{
@@ -310,15 +316,14 @@ color: #7d2ae8;
 @media all and (min-width: 1000px) and (max-width:1946px){          
     .project-content{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     padding: 50px;
-    gap: 50px;
+    gap: 100px;
     font-size: 1.5em;
     color: #7d2ae8;
     text-align: center;
-}
-
             }
+}
 </style>
 <body>
     <header>
@@ -445,15 +450,11 @@ color: #7d2ae8;
                 <div>
                     <img src="./Screenshot 2024-01-16 111541.png" alt="">
                     <h2>StopWatch</h2>
-                    <p>• Independently developed a stopwatch application with minute, second, and millisecond functionality, catering to sports and fast-paced activities.
-                        • Implemented user-friendly features such as start, pause, and reset buttons for efficient time tracking.
-                        • Completed the project within a tight deadline of 2 days.
-                    
-                    
+                    <p>Independently developed a stopwatch application with minute, second, and millisecond functionality, catering to sports and fast-paced activities.
+                        Implemented user-friendly features such as start, pause, and reset buttons for efficient time tracking.
                     </p>
                     <p>Teck Stack:
                         HTML5 |CSS3 |JavaScript
-                        <br>
                         <br>
                     </p>
                     <div class="btn-project">
