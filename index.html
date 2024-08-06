@@ -26,6 +26,9 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    background-color: rgb(19,23,24);
+    height: 80px;
+ 
 }
 .logo {
     font-size: 2em;
@@ -82,6 +85,11 @@ header {
 .image1{
     padding: 30px;
 }
+.image1>img{
+    border-radius: 50%;
+    width: auto;
+    height: auto;
+}
 .content-skills>h2{
     text-align: center;
     font-size: 3em;
@@ -110,6 +118,7 @@ header {
 .content>p {
     padding: 10px 0 40px 0;
     color: #a3a3ac;
+    font-size: larger;
 }
 .btn>a {
     color: #000000;
@@ -202,6 +211,16 @@ header {
 .skill-heading>h2>span{
     color: #7d2ae8;
 }
+.github-heading>h2>span{
+    color: #7d2ae8;
+}
+.github-heading{
+    font-size: 2em;
+    text-align: center;
+    margin-top: 50px;
+    text-transform: uppercase;
+    padding-bottom: 30px;
+}
 .project{
     background-color: black;
     height: auto;
@@ -216,23 +235,25 @@ header {
     font-size: 1.5em;
     color: #7d2ae8;
     text-align: center;
+    height: 90%;
+    width: auto;
 }
 .project-content>div{
     box-shadow: rgba(82, 80, 81, 0.995) 0px 0px 0px 2px, rgba(122, 112, 122, 0.799) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
     border-radius: 5px;
     display: inline;
     align-content: flex-end;
+    padding-top: 10px;
 }
 .project-content>div>p{
    color: #555;
    font-size: 0.7em;
    font-weight: bold;
-   padding: 30px;
+   padding: 15px;
 }
 .project-content>div>img{
    width: 550px;
    height: 300px;
-   padding-top: 20px;
    border-radius: 5px;
 }
 .content-project>h2{
@@ -250,13 +271,13 @@ color: #7d2ae8;
     padding:25px;
 }
 .btn-project>a>button{
-    color: #fff;
+    color:#000000;;
     text-decoration: none;
     padding: 10px 40px;
     background: #7d2ae8;
     border-radius: 10px;
     border: 2px solid #7d2ae8;
-    font-weight: 500;
+    font-weight: 600;
     transition: .3s;
 }
 .btn-project>a>button:hover{
@@ -266,21 +287,60 @@ color: #7d2ae8;
 .contact{
     background-color:  rgb(25,30,32);
 }
-.content-contact{
-    padding: 50px;
-    height: auto;
-    width: auto;
+.contact_container{
+    display: flex;
+    justify-content: space-evenly;
 
 }
-.content-contact>h2{
+.contact_us{
+    border: 1px solid #7d2ae8;
+    font-size: 1.5em;
+    font-weight: 800;
+    color: #7d2ae8;
+    border-radius: 5px;
+    margin-top: 50px;
+    width: 500px;
+    height: 500px;
+    padding-left: 100px;
+    box-shadow: rgba(82, 80, 81, 0.995) 0px 0px 0px 2px, rgba(122, 112, 122, 0.799) 0px 4px 6px -1px, rgba(255, 255, 255, 0.08) 0px 1px 0px inset;
+}
+.submit{
+    color: rgb(1, 1, 1);
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+  width: auto;
+  text-align: center;
+  background-image: initial;
+  background-position-x: initial;
+  background-position-y: initial;
+  background-size: initial;
+  background-attachment: initial;
+  background-origin: initial;
+  background-clip: initial;
+  background-color: #7d2ae8;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+}
+.contact_content{
+
+    padding-left: 50px;
+    padding-bottom: 50px;
+    height: auto;
+    width: auto;
+    
+
+}
+.contact_content>h2{
     text-align: center;
     font-size: 3em;
     padding-top: 50px;
 }
-.content-contact>h2>span {
+.contact_content>h2>span {
     color: #7d2ae8;
 }
-.content-contact>i {
+.contact_info>i {
     display: inline-block;
     width: 35px;
     height: 35px;
@@ -294,11 +354,11 @@ color: #7d2ae8;
     transition: .3s;
     padding: 0px 0px 0px 8px;
 }
-.content-contact>h3{
+.contact_info>h3{
     font-size: 2.5em;
-    margin-top: 150px;
+    margin-top: 50px;
 }
-.content-contact>a {
+.contact_info>a {
    text-decoration: none;
    color: #7d2ae8;
    font-size: 1.7em;
@@ -443,6 +503,14 @@ color: #7d2ae8;
                     <img src="https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png" alt="">
                     <h2>React</h2>
                 </div>
+                <div>
+                    <img src="https://static.stocktitan.net/company-logo/mdb-lg.png" alt="">
+                    <h2>MongoDB</h2>
+                </div>
+                <div>
+                    <img src="https://media.licdn.com/dms/image/D4E12AQEBg943ptCYpg/article-cover_image-shrink_720_1280/0/1686391647921?e=2147483647&v=beta&t=sTfwUvcIfW7Fuby7hMluDfuRJK3HfYMMWc2SyZR7-GA" alt="">
+                    <h2>Node.JS</h2>
+                </div>
             </div>
             <div class="skill-heading">
                 <h2><span>To</span>ols:</h2>
@@ -462,7 +530,9 @@ color: #7d2ae8;
                 </div>
             </div>
             <br><br>
-            <h2>GitHub-<span>Stats</span></h2>
+            <div class="github-heading">
+                <h2><span>Github</span>  Stats:</h2>
+            </div>
             <div class="github">
                 <div>
                 <img src="https://github-readme-stats.vercel.app/api?username=royeshmalvankar&amp;theme=algolia&amp;show_icons=true&amp;hide_border=true&amp;count_private=true" alt="Royesh Github stats">
@@ -516,32 +586,69 @@ color: #7d2ae8;
                     <h2>Movie_project</h2>
                     <p>Developed a user-friendly movie information website using React, ensuring seamless navigation and interactive design.
                         Designed and implemented pagination controls for navigating through movie listings efficiently.
-                        Created tabs for Home, Genre, Highest Rating, and Add Movies for streamlined navigation.
+                        Created tabs for Home, Genre, Highest Rating, and Add Movies.
                     </p>
                     <p>Teck Stack:
                         HTML5 |CSS3 |React
                         <br>
                     </p>
                     <div class="btn-project">
-                        <a target="_blank" href="https://github.com/royeshmalvankar/CWproject2"><button>Git repo</button></a>
+                        <a target="_blank" href="https://github.com/royeshmalvankar/moviesearchapp"><button>Git repo</button></a>
                         <a target="_blank" href="https://moviecwproject2.netlify.app/"><button>Deployed Link</button></a> 
                     </div>
                 </div>
             </div>
     </section>
     <section class="contact" id="Contact">
-        <div class="content-contact" >
+        <div class="contact_content" >
             <h2 >Contact<span> Me</span></h2>
-            <h3>Get In Touch:</h3>
-            <br><br><br>
-            <i class="fa-solid fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;</i><a target="_blank" href="tel:+91 9028583598"> +91 9028583598</a>
-            <br><br><br>
-            <i class="fa-solid fa-envelope">&nbsp;&nbsp;&nbsp;&nbsp;</i><a target="_blank" href="mailto:royeshmalvankar@gmail"> royeshmalvankar@gmail.com</a>
-            <br><br><br>
-            <i class="fa-brands fa-linkedin-in">&nbsp;&nbsp;&nbsp;&nbsp;</i><a target="_blank" href="https://www.linkedin.com/in/royesh-malvankar-59a023276/"> Royesh Malvankar</a>
-            <br><br><br>
-            <i class="fa-brands fa-github">&nbsp;&nbsp;&nbsp;&nbsp; </i><a target="_blank" href="https://github.com/royeshmalvankar"> royeshmalvankar</a>
+            <div class="contact_container">
+                <div class="contact_info" >
+                    <h3>Get In Touch:</h3>
+                    <br><br><br>
+                    <i class="fa-solid fa-phone">&nbsp;&nbsp;&nbsp;&nbsp;</i><a target="_blank" href="tel:+91 9028583598"> +91 9028583598</a>
+                    <br><br><br>
+                    <i class="fa-solid fa-envelope">&nbsp;&nbsp;&nbsp;&nbsp;</i><a target="_blank" href="mailto:royeshmalvankar@gmail"> royeshmalvankar@gmail.com</a>
+                    <br><br><br>
+                    <i class="fa-brands fa-linkedin-in">&nbsp;&nbsp;&nbsp;&nbsp;</i><a target="_blank" href="https://www.linkedin.com/in/royesh-malvankar-59a023276/"> Royesh Malvankar</a>
+                    <br><br><br>
+                    <i class="fa-brands fa-github">&nbsp;&nbsp;&nbsp;&nbsp; </i><a target="_blank" href="https://github.com/royeshmalvankar"> royeshmalvankar</a>
+                </div>
+                <div class="contact_us">
+                    <div class="responsive-container-block bigContainer">
+                    <div class="responsive-container-block Container">
+                        <form class="formTable" id="izml">
+                            <div class="firstRow">
+                            <div class="fullNameArea">
+                                <p class="cardHead">
+                                Full Name
+                                </p>
+                                <input class="fullName" id="fullName" name="fullName" type="text">
+                            </div>
+                            <div class="emailArea">
+                                <p class="cardHead">
+                                Email Address
+                                </p>
+                                <input class="email" id="email" name="email" type="text">
+                            </div>
+                            </div>
+                            <div class="messageArea">
+                            <p class="cardHead">
+                                Message
+                            </p>
+                            <textarea class="message" cols="30" id="message" name="message" rows="10"></textarea>
+                            </div>
+                            <a class="submit" >
+                            Send
+                            </a>
+                        </form>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
         </div>
+
     </section>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
     <script>
